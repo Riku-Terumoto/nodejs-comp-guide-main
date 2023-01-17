@@ -1,7 +1,9 @@
 function plus(a, b) {
   return a + b;
 }
-function minus(a, b) {
+
+// defaultexportは一ファイル一つに設定できる（ファイル自体に設定することも可能）
+export default function minus(a, b) {
   return a - b;
 }
 
