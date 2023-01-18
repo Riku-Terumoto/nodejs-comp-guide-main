@@ -1,12 +1,14 @@
-# ESM と CJS の違い
-- No require, exports, or module.exports
-- No __filename or __dirname
-- require で JSON が読み込めない
+<!-- # ESM と CJS の違い -->
+
+<!-- - No require, exports, or module.exports -->
+<!-- - No __filename or __dirname
+- require で JSON が読み込めない -->
+<!-- →上記はES Moduleでは使用できない -->
 
 ```js:hello.cjs
 console.log('hello');
 ```
-
+<!-- CommonJSでは処理を記述した時下記のように実行される -->
 ```js:Node.js CJSの実行時
 (function (exports, require, module, __filename, __dirname) {
   // 即時関数でモジュールはラップされる
