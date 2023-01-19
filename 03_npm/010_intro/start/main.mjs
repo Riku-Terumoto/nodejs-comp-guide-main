@@ -3,6 +3,8 @@
 // import _ from '../lib/lodash.js';
 
 // npm install lodashすると以下importするだけで使えるようになる
+// パスを記載すると場所にスラッシュやドットがない場合は、Nodeはパッケージと判断する（あればパスと判断するNodeJSの仕様）
+// node_modules内のlodashパッケージのpackage.jsonを探しに行く
 import _ from 'lodash';
 const original = { prop: { nested: 'value' } };
 // オブジェクトの複製
